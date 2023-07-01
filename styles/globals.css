@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* :root {
+  
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 14px;
+}
+
+
+/* Custom Markdown styles */
+
+
+/* Headers */
+.markdown-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.markdown-container h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.markdown-container h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+/* Links */
+.markdown-container a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.markdown-container a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+.markdown-container ul,
+.markdown-container ol {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 15px !important;
+}
+
+.markdown-container ul li,
+.markdown-container ol li {
+  margin-bottom: 8px;
+}
+
+.markdown-container ol li {
+  list-style: decimal;
+}
+.markdown-container ul li {
+  list-style: disc;
+}
+/* Code blocks */
+.markdown-container pre {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 12px;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.markdown-container code {
+  font-family: Consolas, monospace;
+}
+
+/* Inline code */
+.markdown-container p code {
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Blockquotes */
+.markdown-container blockquote {
+  margin: 0;
+  padding: 8px 16px;
+  border-left: 4px solid #ccc;
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+/* Horizontal rule */
+.markdown-container hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.transload {
+  animation: transload ease-in-out 1s infinite;
+}
+
+@keyframes transload {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(400px);
+  }
+}
+
+@media(max-width:500px) {
+    body {
+      font-size: 12px;
+    }
+}
+
+
+.transfull {
+  animation: transfull ease-in-out 30s infinite;
+}
+
+@keyframes transfull {
+  0% {
+    width:0%;
+  }
+  100% {
+    width:100%;
+  }
+}
+
+@media(max-width:500px) {
+    body {
+      font-size: 12px;
+    }
+}
+
+
+
